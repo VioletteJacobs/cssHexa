@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hexa</title>
-    <link rel="stylesheet" href="./public/css/app.css">
+    <link rel="stylesheet" href="/public/css/app.css">
+    <!-- greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
 </head>
 <body>
-    <header class="width:400px">
+    <header class="width:400px header" >
         <nav class="navbar navbar-expand-lg navbar-light text-white">
             <a class="navbar-brand" href="#">HEXA</a>
             <!-- button responsive -->
@@ -43,21 +46,21 @@
     <!-- section un  -->
     <section class="sectionun">
         <div class="row m-5">
-            <div class="d-flex col-lg-4 col-sm-12">
+            <div class="d-flex col-lg-4 col-sm-12 una">
               <div class="text-center">
                 <i class="fas fa-bell"></i>
                 <h5>Modern Design</h5>
                 <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               </div>
             </div>
-            <div class="d-flex col-lg-4 col-sm-12">
+            <div class="d-flex col-lg-4 col-sm-12 unb">
               <div class="text-center">
                 <i class="far fa-heart text-center"></i>
                 <h5>Build with love</h5>
                 <p>This card has supporting text below as a natural lead-in to additional content.</p>
               </div>
             </div>
-            <div class="d-flex col-lg-4 col-sm-12">
+            <div class="d-flex col-lg-4 col-sm-12 unc">
                 <div class="text-center">
                   <i class="fas fa-bolt"></i>
                   <h5>Fast loading </h5>
@@ -68,10 +71,10 @@
     </section>
     <!-- section deux -->
     <section class="sectiondeux container">
-      <div class="card m-2" style="max-width: 100%;">
+      <div class="card m-2 deuxa" style="max-width: 100%;">
         <div class="row m-0 no-gutters">
           <div class="col-md-4">
-            <img src="./public/img/img_1_long.jpg" class="card-img" alt="...">
+            <img src="./public/img/img_1_long.jpg" class="card-img deuxaimg" alt="...">
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -82,7 +85,7 @@
           </div>
         </div>
       </div>
-      <div class="card mb-3" style="max-width: 100%;">
+      <div class="card mb-3 deuxb" style="max-width: 100%;">
         <div class="row m-0 no-gutters">
           <div class="col-md-8">
             <div class="card-body">
@@ -93,7 +96,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <img src="./public/img/img_2_long.jpg" class="card-img" alt="...">
+            <img src="./public/img/img_2_long.jpg" class="card-img deuxbimg" alt="...">
           </div>
         </div>
       </div>
@@ -107,14 +110,14 @@
         </div>
         <div>
           <div class="row m-0">
-            <img class="col-lg-4 col-md-4  col-sm-12 p-0" src="./public/img/img_1.jpg" alt="">
-            <img class="col-lg-4 col-md-4 col-sm-12  p-0" src="./public/img/img_2.jpg" alt="">
-            <img class="col-lg-4 col-md-4 col-sm-12 p-0" src="./public/img/img_3.jpg" alt="">
+            <img class="col-lg-4 col-md-4  col-sm-12 p-0 imgtroisa" src="./public/img/img_1.jpg" alt="">
+            <img class="col-lg-4 col-md-4 col-sm-12  p-0 imgtroisb" src="./public/img/img_2.jpg" alt="">
+            <img class="col-lg-4 col-md-4 col-sm-12 p-0 imgtroisc" src="./public/img/img_3.jpg" alt="">
           </div>
           <div class="row m-0">
-            <img class="col-4 p-0"src="./public/img/img_4.jpg" alt="">
-            <img class="col-4 p-0"src="./public/img/img_5.jpg" alt="">
-            <img class="col-4 p-0"src="./public/img/img_6.jpg" alt="">
+            <img class="col-4 p-0 imgtroisd"src="./public/img/img_4.jpg" alt="">
+            <img class="col-4 p-0 imgtroise"src="./public/img/img_5.jpg" alt="">
+            <img class="col-4 p-0 imgtroisf"src="./public/img/img_6.jpg" alt="">
           </div>
         </div>
       </div>
@@ -126,10 +129,10 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit earum est voluptas corporis consectetur fuga suscipit. Non sed nemo eaque esse officiis exercitationem assumenda nisi inventore corrupti animi quasi accusantium possimus delectus maxime doloremque autem deleniti debitis ipsa, laudantium harum itaque expedita cupiditate quos! Alias.</p>
       </div>
       <div class="card-deck p-3 m-5">
-        <div class="card shadow p-0 mb-5 bg-white rounded">
+        <div class="card shadow p-0 mb-5 bg-white rounded testimonialcarda">
           <div class="row m-0">
-            <img src="./public/img/person_1.jpg" class="card-img-top  rounded-circle col-6" alt="...">
-            <div class="col-6">
+            <img src="./public/img/person_1.jpg" class="card-img-top  mt-5 rounded-circle col-6" alt="...">
+            <div class="col-6 mt-5">
               <h5 class="card-title">Johanna</h5>
               <span>CEO, CO-founder</span>
             </div>
@@ -138,10 +141,10 @@
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           </div>
         </div>
-        <div class="card shadow p-0 mb-5 bg-white rounded">
+        <div class="card shadow p-0 mb-5 bg-white rounded testimonialcardb">
           <div class="row m-0">
-            <img src="./public/img/person_3.jpg" class="card-img-top  rounded-circle col-6" alt="...">
-            <div class="col-6">
+            <img src="./public/img/person_3.jpg" class="card-img-top  mt-5 rounded-circle col-6" alt="...">
+            <div class="col-6 mt-5">
               <h5 class="card-title">Tom</h5>
               <span>CEO, Co-founder</span>
             </div>
@@ -150,10 +153,10 @@
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           </div>
         </div>
-        <div class="card shadow p-0 mb-5 bg-white rounded">
+        <div class="card shadow p-0 mb-5 bg-white rounded testimonialcardc">
           <div class="row m-0">
-            <img src="./public/img/person_2.jpg" class="card-img-top  rounded-circle col-6" alt="...">
-            <div class="col-6">
+            <img src="./public/img/person_2.jpg" class="card-img-top  mt-5 rounded-circle col-6" alt="...">
+            <div class="col-6 mt-5">
               <h5 class="card-title">Michel</h5>
               <span>CEO, CO-founder</span>
             </div>
@@ -171,7 +174,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quidem et tempora, enim fuga eius qui reprehenderit non architecto repellat aliquid nobis provident soluta sint itaque adipisci amet quod sed, rem velit repudiandae libero ut ex quo! Quis ad iusto sed saepe expedita illum repudiandae?</p>
       </div>
       <div class="row m-0 flex-wrap">
-        <div class="card mb-3 col-6 p-3" style="max-width: 50%;">
+        <div class="card mb-3 col-6 p-3 bloga" style="max-width: 50%;">
           <div class="row m-0 no-gutters">
             <div class="col-md-4">
               <img src="./public/img/img_2.jpg" class="card-img" alt="...">
@@ -186,7 +189,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 row m-0">
+        <div class="col-6 row m-0 blogb">
           <div class="card mb-3 p-3">
             <div class="row m-0 no-gutters">
               <div class="col-md-4">
@@ -201,7 +204,7 @@
               </div>
             </div>
           </div>
-          <div class="card mb-3 p-3">
+          <div class="card mb-3 p-3 blogc">
             <div class="row m-0 no-gutters">
               <div class="col-md-4">
                 <img src="./public/img/img_6.jpg" class="card-img" alt="...">
@@ -253,6 +256,7 @@
       </div>
     </footer>
 
+    <script src="/public/js/main.js"></script>
     <script src="./node_modules/jquery/dist/jquery.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
